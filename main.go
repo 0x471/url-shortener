@@ -27,7 +27,7 @@ func shortenHandler(db *dbHandler) http.HandlerFunc {
 		urlArr, ok := r.URL.Query()["url"]
 
 		if !ok || len(urlArr[0]) < 1 {
-			w.WriteHeader(500)
+			w.WriteHeader(400)
 			fmt.Fprintln(w, "URL parameter is missing")
 			return
 		}
