@@ -1,9 +1,1 @@
-# URL Shortener | GoLang
-
-```adler-32 checksum algorithm```
-
-
-
-
-
-
+Hashes the URLs with adler32 checksum algortihm.
